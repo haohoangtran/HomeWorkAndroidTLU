@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dev.tranh.day2.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llCb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What else in your coffee?" />
+
+        <CheckBox
+            android:id="@+id/cbCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cream" />
+
+        <CheckBox
+            android:id="@+id/cbSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar" />
+
+        <CheckBox
+            android:id="@+id/cbShowtoast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Show toast" />
+
+        <Button
+            android:id="@+id/bt_Summit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Verify" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRb"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What else in your coffee?" />
+        <RadioGroup
+            android:id="@+id/rgCoffee"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbCream"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cream" />
+
+            <RadioButton
+                android:id="@+id/rbSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sugar" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/bt_SummitRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Verify" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/cb_Bai2"
+        android:text="Bai 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+</LinearLayout>
